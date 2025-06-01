@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "hJjY3CVN8hKfwq6uj0Fm9/PM6RW86TGg8/zFLW5vY0k=",
+  "Source": "NimbusApi",
+  "BasePath": "_content/NimbusApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
