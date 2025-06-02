@@ -6,8 +6,12 @@ namespace NimbusApi.Repository
 {
     public class EstadoRepository
     {
-        public readonly AppDbContext _context;
-        
+        private readonly AppDbContext _context;
+        public EstadoRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
         public async Task<IEnumerable<Estado>> GetAllAsync()
         {
             return await _context.Estados.ToListAsync();

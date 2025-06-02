@@ -15,14 +15,14 @@ namespace NimbusApi.Controllers
             _service = service;
         }
 
-        [HttpGet("alertas")]
+        [HttpGet("")]
         public async Task<IActionResult> GetAll()
         {
             var alertas = await _service.GetAllAsync();
             return Ok(alertas);
         }
 
-        [HttpGet("alertas/{id}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             try
@@ -43,7 +43,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, Message = ex.Message });
             }
         }
-        [HttpPost("alertas")]
+        [HttpPost("")]
         public async Task<IActionResult> Add([FromBody] Alerta alerta)
         {
             try
@@ -69,14 +69,15 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpPut("alertas")]
-        public async Task<IActionResult> Update([FromBody] Alerta alerta)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update([FromBody] Alerta alerta,int id)
         {
             try
             {
-                if (alerta == null)
+               
+                if (id != alerta.IdAlerta)
                 {
-                    return BadRequest(new { StatusCode = 400, Message = "O objeto Alerta não pode ser nulo." });
+                    return BadRequest(new { StatusCode = 400, Message = "O ID do alerta não corresponde ao ID fornecido na URL." });
                 }
                 var updatedAlert = await _service.UpdateAsync(alerta);
                 return Ok(updatedAlert);
@@ -95,7 +96,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpDelete("alertas/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

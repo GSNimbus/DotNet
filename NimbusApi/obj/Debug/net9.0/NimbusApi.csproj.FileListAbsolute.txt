@@ -141,3 +141,4 @@ C:\Users\Margoth\source\repos\NimbusApi\NimbusApi\obj\Debug\net9.0\refint\Nimbus
 C:\Users\Margoth\source\repos\NimbusApi\NimbusApi\obj\Debug\net9.0\NimbusApi.pdb
 C:\Users\Margoth\source\repos\NimbusApi\NimbusApi\obj\Debug\net9.0\NimbusApi.genruntimeconfig.cache
 C:\Users\Margoth\source\repos\NimbusApi\NimbusApi\obj\Debug\net9.0\ref\NimbusApi.dll
+C:\Users\Margoth\source\repos\NimbusApi\NimbusApi\obj\Debug\net9.0\NimbusApi.sourcelink.json

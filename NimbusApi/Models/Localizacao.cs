@@ -12,6 +12,6 @@ namespace NimbusApi.Models
         public string Latitude { get; set; }
 
         [JsonIgnore]
-        public List<Alerta> Alertas { get; set; }
+        public List<Alerta>? Alertas { get; set; }
     }
 }

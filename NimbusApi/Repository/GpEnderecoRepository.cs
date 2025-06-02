@@ -6,7 +6,11 @@ namespace NimbusApi.Repository
 {
     public class GpEnderecoRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+        public GpEnderecoRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<IEnumerable<GpEndereco>> GetAllAsync()
         {

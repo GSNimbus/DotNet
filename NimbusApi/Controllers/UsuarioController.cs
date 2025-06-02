@@ -14,13 +14,13 @@ namespace NimbusApi.Controllers
         {
             _service = service;
         }
-        [HttpGet("usuarios")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> Get()
         {
             var usuarios = await _service.GetAllAsync();
             return Ok(usuarios);
         }
-        [HttpGet("usuario/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetById(int id)
         {
             try
@@ -41,7 +41,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, Message = ex.Message });
             }
         }
-        [HttpGet("usuario/email/{email}")]
+        [HttpGet("email/{email}")]
         public async Task<ActionResult<Usuario>> GetByEmail(string email)
         {
             try
@@ -63,7 +63,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpPost("usuario")]
+        [HttpPost]
         public async Task<ActionResult<Usuario>> Post([FromBody] Usuario usuario)
         {
             try
@@ -90,7 +90,7 @@ namespace NimbusApi.Controllers
 
         }
 
-        [HttpPut("usuario/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult<Usuario>> Put(int id, [FromBody] Usuario usuario)
         {
             try
@@ -120,7 +120,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpDelete("usuario/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

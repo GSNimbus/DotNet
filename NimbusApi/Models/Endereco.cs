@@ -10,6 +10,6 @@ namespace NimbusApi.Models
         public int IdBairro { get; set; }
 
         [JsonIgnore]
-        public Bairro Bairro { get; set; }
+        public Bairro? Bairro { get; set; }
     }
 }

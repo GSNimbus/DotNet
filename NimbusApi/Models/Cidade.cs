@@ -9,6 +9,6 @@ namespace NimbusApi.Models
         public int IdEstado { get; set; }
 
         [JsonIgnore]
-        public Estado Estado { get; set; }
+        public Estado? Estado { get; set; }
     }
 }

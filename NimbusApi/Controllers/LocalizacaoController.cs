@@ -16,14 +16,14 @@ namespace NimbusApi.Controllers
             _service = service;
         }
 
-        [HttpGet("localizacoes")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Localizacao>>> Get()
         {
             var localizacoes = await _service.GetAllAsync();
             return Ok(localizacoes);
         }
 
-        [HttpGet("localizacao/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Localizacao>> GetById(int id)
         {
             try
@@ -44,7 +44,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, Message = ex.Message });
             }
         }
-        [HttpPost("localizacao")]
+        [HttpPost]
         public async Task<ActionResult<Localizacao>> Post(Localizacao localizacao)
         {
             try
@@ -74,7 +74,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpPut("localizacao/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult<Localizacao>> Put(int id, Localizacao localizacao)
         {
             try
@@ -104,7 +104,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpDelete("localizacao/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

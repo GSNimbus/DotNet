@@ -6,7 +6,12 @@ namespace NimbusApi.Repository
 {
     public class BairroRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+
+        public BairroRepository(AppDbContext context)
+        {
+            _context = context;
+        }
         public async Task<IEnumerable<Bairro>> GetAllAsync()
         {
             return await _context.Bairro.ToListAsync();

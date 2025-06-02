@@ -8,7 +8,8 @@ namespace NimbusApi.Models
         public string NomeEstado { get; set; }
 
         public int IdPais { get; set; }
+        
         [JsonIgnore]
-        public Pais Pais { get; set; }
+        public Pais? Pais { get; set; }
     }
 }

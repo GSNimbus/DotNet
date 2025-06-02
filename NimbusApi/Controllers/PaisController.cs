@@ -17,13 +17,13 @@ namespace NimbusApi.Controllers
             _service = service;
         }
 
-        [HttpGet("pais")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Pais>>> Get()
         {
             var paises = await _service.GetAllAsync();
             return Ok(paises);
         }
-        [HttpGet("pais/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Pais>> GetById(int id)
         {
             try
@@ -40,7 +40,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, ex.Message });
             }
         }
-        [HttpGet("pais/nome/{nomePais}")]
+        [HttpGet("nome/{nomePais}")]
         public async Task<ActionResult<Pais>> GetByName(string nomePais)
         {
             try
@@ -57,7 +57,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, ex.Message });
             }
         }
-        [HttpPost("pais")]
+        [HttpPost]
         public async Task<ActionResult<Pais>> Post([FromBody] Pais pais)
         {
             try
@@ -75,7 +75,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpPut("pais/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult<Pais>> Put(int id, [FromBody] Pais pais)
         {
             try
@@ -89,7 +89,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpDelete("pais/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

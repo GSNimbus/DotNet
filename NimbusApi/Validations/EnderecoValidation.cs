@@ -16,7 +16,7 @@
             {
                 throw new ArgumentException("IdBairro deve ser um valor positivo.", nameof(endereco.IdBairro));
             }
-            if (endereco.Cep.Length != 10)
+            if (endereco.Cep.Length != 8)
             {
                 throw new ArgumentException("CEP deve ter exatamente 10 caracteres.", nameof(endereco.Cep));
             }

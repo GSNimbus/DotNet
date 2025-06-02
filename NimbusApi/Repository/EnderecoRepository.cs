@@ -7,7 +7,12 @@ namespace NimbusApi.Repository
     public class EnderecoRepository
     {
 
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+
+        public EnderecoRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<IEnumerable<Endereco>> GetAllAsync()
         {

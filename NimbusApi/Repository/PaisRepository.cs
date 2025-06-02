@@ -6,7 +6,12 @@ namespace NimbusApi.Repository
 {
     public class PaisRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+        public PaisRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
 
         public async Task <IEnumerable<Pais>> GetAllAsync()
         {
@@ -19,6 +24,7 @@ namespace NimbusApi.Repository
 
         public async Task<Pais> AddAsync(Pais pais)
         {
+            Console.WriteLine(pais);
             _context.Pais.Add(pais);
             await _context.SaveChangesAsync();
             return pais;

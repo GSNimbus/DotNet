@@ -7,7 +7,11 @@ namespace NimbusApi.Repository
     public class CidadeRepository
     {
 
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+        public CidadeRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<IEnumerable<Cidade>> GetAllAsync()
         {

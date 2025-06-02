@@ -6,7 +6,7 @@ namespace NimbusApi.Repository
 {
     public class AlertaRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
         public AlertaRepository(AppDbContext context)
         {
             _context = context;

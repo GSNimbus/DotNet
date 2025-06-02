@@ -6,7 +6,8 @@ namespace NimbusApi.Repository
 {
     public class LocalizacaoRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+
         public LocalizacaoRepository(AppDbContext context)
         {
             _context = context;

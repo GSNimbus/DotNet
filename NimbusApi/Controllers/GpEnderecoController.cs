@@ -15,13 +15,13 @@ namespace NimbusApi.Controllers
             _service = service;
         }
 
-        [HttpGet("enderecos")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<GpEndereco>>> Get()
         {
             var enderecos = await _service.GetAllAsync();
             return Ok(enderecos);
         }
-        [HttpGet("endereco/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<GpEndereco>> GetById(int id)
         {
             try
@@ -43,7 +43,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpGet("endereco/nome/{nome}")]
+        [HttpGet("nome/{nome}")]
         public async Task<ActionResult<GpEndereco>> GetByNomeGrupo(string nome)
         {
             try
@@ -69,7 +69,7 @@ namespace NimbusApi.Controllers
             }
         }
 
-        [HttpPost("endereco")]
+        [HttpPost]
         public async Task<ActionResult<GpEndereco>> Post([FromBody] GpEndereco gpEndereco)
         {
             try
@@ -94,7 +94,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, Message = ex.Message });
             }
         }
-        [HttpPut("endereco/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult<GpEndereco>> Put(int id, [FromBody] GpEndereco gpEndereco)
         {
             try
@@ -119,7 +119,7 @@ namespace NimbusApi.Controllers
                 return BadRequest(new { StatusCode = 400, Message = ex.Message });
             }
         }
-        [HttpDelete("endereco/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try

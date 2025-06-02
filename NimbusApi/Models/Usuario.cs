@@ -16,7 +16,7 @@ namespace NimbusApi.Models
         public int idLocalizacao { get; set; }
 
         [JsonIgnore]
-        public Localizacao Localizacao { get; set; }
+        public Localizacao? Localizacao { get; set; }
 
     }
 }

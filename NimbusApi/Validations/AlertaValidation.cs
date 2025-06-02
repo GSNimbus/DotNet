@@ -32,10 +32,6 @@ namespace NimbusApi.Validations
             {
                 throw new TamanhoInvalidoException(500, "Mensagem");
             }
-            if (alerta.IdLocalizacao <= 0)
-            {
-                throw new ArgumentException("O Id da localização deve ser um valor positivo.");
-            }
         }
     }
 }

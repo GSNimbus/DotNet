@@ -6,7 +6,11 @@ namespace NimbusApi.Repository
 {
     public class UsuarioRepository
     {
-        public readonly AppDbContext _context;
+        private readonly AppDbContext _context;
+        public UsuarioRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public async Task<IEnumerable<Usuario>> GetAllAsync()
         {
