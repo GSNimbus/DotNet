@@ -7,6 +7,10 @@ namespace NimbusApi.Services
     public class BairroService
     {
         public readonly BairroRepository _repository;
+        public BairroService(BairroRepository repository)
+        {
+            _repository = repository;
+        }
 
         public async Task<IEnumerable<Bairro>> GetAllAsync()
         {

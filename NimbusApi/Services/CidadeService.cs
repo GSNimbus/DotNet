@@ -8,6 +8,10 @@ namespace NimbusApi.Services
     {
 
         public readonly CidadeRepository _repository;
+        public CidadeService(CidadeRepository repository)
+        {
+            _repository = repository;
+        }
 
         public async Task<IEnumerable<Cidade>> GetAllAsync()
         {

@@ -1,0 +1,22 @@
+﻿using System.Text.Json.Serialization;
+
+namespace NimbusApi.Models
+{
+    public class Usuario
+    {
+
+        public int IdUsuario { get; set; }
+
+        public string Nome { get; set; }
+
+        public string Email { get; set; }
+
+        public string Senha { get; set; }
+
+        public int idLocalizacao { get; set; }
+
+        [JsonIgnore]
+        public Localizacao Localizacao { get; set; }
+
+    }
+}

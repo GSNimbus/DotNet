@@ -8,6 +8,11 @@ namespace NimbusApi.Services
     {
         public readonly LocalizacaoRepository _repository;
 
+        public LocalizacaoService(LocalizacaoRepository repository)
+        {
+            _repository = repository;
+        }
+
         public async Task<IEnumerable<Localizacao>> GetAllAsync()
         {
             return await _repository.GetAllAsync();
