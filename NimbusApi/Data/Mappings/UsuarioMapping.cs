@@ -23,10 +23,7 @@ namespace NimbusApi.Data.Mappings
             builder.Property(u => u.Senha)
                 .IsRequired()
                 .HasMaxLength(100);
-            builder.HasOne(u => u.Localizacao)
-                .WithMany()
-                .HasForeignKey(u => u.idLocalizacao)
-                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }

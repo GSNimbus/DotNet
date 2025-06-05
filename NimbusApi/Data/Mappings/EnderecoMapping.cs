@@ -7,7 +7,7 @@ namespace NimbusApi.Data.Mappings
     {
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Endereco> builder)
         {
-            builder.ToTable("Endereco");
+            builder.ToTable("t_nimbus_endereco");
             builder.HasKey(e => e.IdEndereco);
             builder.Property(e => e.IdEndereco)
                 .HasColumnName("id_endereco")
