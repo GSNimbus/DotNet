@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("NimbusApi")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58730f7e2a80c512c739b9001f5de132ea881cb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab6b490e781c624a0ddc6f65e0c1fccdc7a04c39")]
 [assembly: System.Reflection.AssemblyProductAttribute("NimbusApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NimbusApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

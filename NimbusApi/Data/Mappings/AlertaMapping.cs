@@ -8,7 +8,7 @@ namespace NimbusApi.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Alerta> builder)
         {
-            builder.ToTable("Alerta");
+            builder.ToTable("t_nimbus_alerta");
             builder.HasKey(a => a.IdAlerta);
             builder.Property(a => a.Risco)
                 .IsRequired()
@@ -21,9 +21,9 @@ namespace NimbusApi.Data.Mappings
                 .HasMaxLength(500);
             builder.Property(a => a.DataHora)
                 .IsRequired();
-            builder.HasOne(a => a.Localizacao)
+            builder.HasOne(a => a.Bairro)
                 .WithMany(l => l.Alertas)
-                .HasForeignKey(a => a.IdLocalizacao);
+                .HasForeignKey(a => a.IdBairro);
         }
     }
 }

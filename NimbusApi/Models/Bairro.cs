@@ -20,6 +20,12 @@ namespace NimbusApi.Models
         public Localizacao? Localizacao { get; set; }
 
         [JsonIgnore]
-        public List<Endereco>? Enderecos { get; set; } 
+        public List<Endereco>? Enderecos { get; set; }
+
+        [JsonIgnore]
+        public List<Alerta>? Alertas { get; set; }
+
+        [JsonIgnore]
+        public List<Previsao>? Previsao { get; set; }
     }
 }

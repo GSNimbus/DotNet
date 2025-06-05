@@ -14,9 +14,9 @@ namespace NimbusApi.Models
 
         public DateTime DataHora { get; set; }
 
-        public int IdLocalizacao { get; set; }
+        public int IdBairro { get; set; }
 
         [JsonIgnore]
-        public Localizacao? Localizacao { get; set; }
+        public Bairro? Bairro { get; set; }
     }
 }
