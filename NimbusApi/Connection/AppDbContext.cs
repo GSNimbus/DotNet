@@ -18,6 +18,7 @@ namespace NimbusApi.Connection
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Bairro> Bairro { get; set; }
+        public DbSet<Previsao> Previsao { get; set; }
         public DbSet<Alerta> Alerta { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,6 +32,7 @@ namespace NimbusApi.Connection
             modelBuilder.ApplyConfiguration(new UsuarioMapping());
             modelBuilder.ApplyConfiguration(new GpEnderecoMapping());
             modelBuilder.ApplyConfiguration(new AlertaMapping());
+            modelBuilder.ApplyConfiguration(new PrevisaoMapping());
         }
 
     }
