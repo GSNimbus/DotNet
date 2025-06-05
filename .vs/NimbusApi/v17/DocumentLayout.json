@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|c:\\users\\margoth\\source\\repos\\nimbusapi\\nimbusapi\\validations\\enderecovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|solutionrelative:nimbusapi\\validations\\enderecovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|c:\\users\\margoth\\source\\repos\\nimbusapi\\nimbusapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|solutionrelative:nimbusapi\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|solutionrelative:nimbusapi\\validations\\gpenderecovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|c:\\users\\margoth\\source\\repos\\nimbusapi\\nimbusapi\\validations\\enderecovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|solutionrelative:nimbusapi\\validations\\enderecovalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|c:\\users\\margoth\\source\\repos\\nimbusapi\\nimbusapi\\validations\\cidadevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AD0ED92-2BFE-4C1C-A1D1-BEA63C292D72}|NimbusApi\\NimbusApi.csproj|solutionrelative:nimbusapi\\validations\\cidadevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -130,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -158,33 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "NimbusApi\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Usuario.cs",
-              "RelativeToolTip": "NimbusApi\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:50.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pais.cs",
-              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Pais.cs",
-              "RelativeDocumentMoniker": "NimbusApi\\Models\\Pais.cs",
-              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Pais.cs",
-              "RelativeToolTip": "NimbusApi\\Models\\Pais.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:47.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Localizacao.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Localizacao.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Localizacao.cs",
@@ -192,12 +166,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Localizacao.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:41.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:44:41.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Endereco.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Endereco.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Endereco.cs",
@@ -205,12 +178,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Endereco.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:35.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:44:35.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Cidade.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Cidade.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Cidade.cs",
@@ -218,12 +190,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Cidade.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:27.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:44:27.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Bairro.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Bairro.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Bairro.cs",
@@ -231,12 +202,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Bairro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:44:02.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:44:02.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Alerta.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Alerta.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Alerta.cs",
@@ -244,12 +214,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Alerta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:43:53.522Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:43:53.522Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Estado.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Estado.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Models\\Estado.cs",
@@ -257,12 +226,11 @@
               "RelativeToolTip": "NimbusApi\\Models\\Estado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:32:07.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:32:07.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "EstadoController.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Controllers\\EstadoController.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Controllers\\EstadoController.cs",
@@ -270,12 +238,11 @@
               "RelativeToolTip": "NimbusApi\\Controllers\\EstadoController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAIwEAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:31:16.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:31:16.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "EstadoMapping.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Data\\Mappings\\EstadoMapping.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Data\\Mappings\\EstadoMapping.cs",
@@ -283,12 +250,48 @@
               "RelativeToolTip": "NimbusApi\\Data\\Mappings\\EstadoMapping.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAwwBMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:31:13.38Z",
+              "WhenOpened": "2025-06-02T16:31:13.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnderecoValidation.cs",
+              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\EnderecoValidation.cs",
+              "RelativeDocumentMoniker": "NimbusApi\\Validations\\EnderecoValidation.cs",
+              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\EnderecoValidation.cs",
+              "RelativeToolTip": "NimbusApi\\Validations\\EnderecoValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:30:18.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
+              "Title": "Pais.cs",
+              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Pais.cs",
+              "RelativeDocumentMoniker": "NimbusApi\\Models\\Pais.cs",
+              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Pais.cs",
+              "RelativeToolTip": "NimbusApi\\Models\\Pais.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:44:47.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "NimbusApi\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Models\\Usuario.cs",
+              "RelativeToolTip": "NimbusApi\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T16:44:50.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "BairroController.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Controllers\\BairroController.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Controllers\\BairroController.cs",
@@ -296,12 +299,11 @@
               "RelativeToolTip": "NimbusApi\\Controllers\\BairroController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:55.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:55.793Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AlertaController.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Controllers\\AlertaController.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Controllers\\AlertaController.cs",
@@ -309,12 +311,11 @@
               "RelativeToolTip": "NimbusApi\\Controllers\\AlertaController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:47.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:47.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "UsuarioValidation.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\UsuarioValidation.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Validations\\UsuarioValidation.cs",
@@ -322,12 +323,11 @@
               "RelativeToolTip": "NimbusApi\\Validations\\UsuarioValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:42.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:42.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PaisValidation.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\PaisValidation.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Validations\\PaisValidation.cs",
@@ -335,12 +335,11 @@
               "RelativeToolTip": "NimbusApi\\Validations\\PaisValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:38.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:38.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LocalizacaoValidation.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\LocalizacaoValidation.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Validations\\LocalizacaoValidation.cs",
@@ -348,12 +347,11 @@
               "RelativeToolTip": "NimbusApi\\Validations\\LocalizacaoValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:34.561Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:34.561Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "GpEnderecoValidation.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\GpEnderecoValidation.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Validations\\GpEnderecoValidation.cs",
@@ -361,12 +359,11 @@
               "RelativeToolTip": "NimbusApi\\Validations\\GpEnderecoValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:28.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:28.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "EstadoValidation.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\EstadoValidation.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Validations\\EstadoValidation.cs",
@@ -374,21 +371,7 @@
               "RelativeToolTip": "NimbusApi\\Validations\\EstadoValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:23.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "EnderecoValidation.cs",
-              "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\EnderecoValidation.cs",
-              "RelativeDocumentMoniker": "NimbusApi\\Validations\\EnderecoValidation.cs",
-              "ToolTip": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Validations\\EnderecoValidation.cs",
-              "RelativeToolTip": "NimbusApi\\Validations\\EnderecoValidation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:18.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:23.5Z"
             },
             {
               "$type": "Document",
@@ -400,8 +383,7 @@
               "RelativeToolTip": "NimbusApi\\Validations\\CidadeValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:11.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:11.911Z"
             },
             {
               "$type": "Document",
@@ -413,8 +395,7 @@
               "RelativeToolTip": "NimbusApi\\Validations\\BairroValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:30:03.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:30:03.003Z"
             },
             {
               "$type": "Document",
@@ -426,8 +407,7 @@
               "RelativeToolTip": "NimbusApi\\Validations\\AlertaValidation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:29:49.662Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T16:29:49.662Z"
             },
             {
               "$type": "Document",
@@ -439,8 +419,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\PaisRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:07:59.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:07:59.765Z"
             },
             {
               "$type": "Document",
@@ -452,8 +431,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\UsuarioRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:07:27.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:07:27.109Z"
             },
             {
               "$type": "Document",
@@ -465,8 +443,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\LocalizacaoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:07:13.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:07:13.61Z"
             },
             {
               "$type": "Document",
@@ -478,8 +455,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\EstadoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:07:03.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:07:03.047Z"
             },
             {
               "$type": "Document",
@@ -491,8 +467,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\GpEnderecoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:07:02.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:07:02.565Z"
             },
             {
               "$type": "Document",
@@ -504,12 +479,11 @@
               "RelativeToolTip": "NimbusApi\\Repository\\EnderecoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:06:55.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:06:55.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CidadeRepository.cs",
               "DocumentMoniker": "C:\\Users\\Margoth\\source\\repos\\NimbusApi\\NimbusApi\\Repository\\CidadeRepository.cs",
               "RelativeDocumentMoniker": "NimbusApi\\Repository\\CidadeRepository.cs",
@@ -517,8 +491,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\CidadeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:06:50.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:06:50.5Z"
             },
             {
               "$type": "Document",
@@ -530,8 +503,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\BairroRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:06:37.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:06:37.855Z"
             },
             {
               "$type": "Document",
@@ -543,8 +515,7 @@
               "RelativeToolTip": "NimbusApi\\Repository\\AlertaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T15:06:34.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T15:06:34.574Z"
             }
           ]
         },
