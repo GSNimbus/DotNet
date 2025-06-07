@@ -6,6 +6,9 @@ Nossa solução para a Global Solution consiste em uma aplicação para realizar
 
 A aplicação coleta dados atualizados da previsão do tempo e a localização do usuário, assim utiliza esses dados junto ao modelo de inteligência artificial para prever a chance de ocorrências de um desastre natural em sua região.
 
+## Video apresentação
+- https://youtu.be/EK676Obg-t0
+
 ## Estrutura do Projeto
 
 - **Controllers/**: Camada de entrada da API, responsável por receber e responder às requisições HTTP.
