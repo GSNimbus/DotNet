@@ -7,10 +7,14 @@ namespace NimbusApi.Services
     public class GpEnderecoService
     {
         public readonly GpEnderecoRepository _repository;
+        public readonly PrevisaoService _previsaoService;
+        public readonly EnderecoService _enderecoService;
 
-        public GpEnderecoService(GpEnderecoRepository repository)
+        public GpEnderecoService(GpEnderecoRepository repository, PrevisaoService previsaoService,EnderecoService enderecoService)
         {
             _repository = repository;
+            _previsaoService = previsaoService;
+            _enderecoService = enderecoService;
         }
 
         public async Task<IEnumerable<GpEndereco>> GetAllAsync()
@@ -35,6 +39,15 @@ namespace NimbusApi.Services
             }
             return await _repository.GetByNomeGrupo(nome);
         }
+        public async Task<IEnumerable<GpEndereco>> GetByIdUsuarioAsync(int idUsuario)
+        {
+            if (idUsuario <= 0)
+            {
+                throw new ArgumentException("O ID do usuário não pode ser zero ou negativo.");
+            }
+            return await _repository.GetByUsuarioIdAsync(idUsuario);
+        }
+
         public async Task<GpEndereco> AddAsync(GpEndereco gpEndereco)
         {
             if (gpEndereco == null)
@@ -42,8 +55,31 @@ namespace NimbusApi.Services
                 throw new ArgumentNullException(nameof(gpEndereco), "O objeto GpEndereco não pode ser nulo.");
             }
             GpEnderecoValidation.ValideGpEndereco(gpEndereco);
+            var previsaoMocada = new PreverCorpo
+            {
+                temperature2_m = 20,
+                relative_humidity2_m = 20,
+                surface_pressure = 20,
+                apparent_temperature = 20,
+                wind_speed10_m = 20,
+                Mes = 1,
+                DiaDoAno = 1,
+                HoraDoDia = 1
+            };
+            var endereco = await _enderecoService.GetByIdAsync(gpEndereco.IdEndereco);
+            if (endereco == null)
+            {
+                throw new KeyNotFoundException("Endereço não encontrado.");
+            }
+            var previsao = await _previsaoService.Prever(previsaoMocada, endereco.IdBairro);
+            if (previsao == null)
+            {
+                throw new Exception("Erro ao prever as condições climáticas.");
+            }
             return await _repository.AddAsync(gpEndereco);
         }
+
+        
 
         public async Task<GpEndereco> UpdateAsync(int id, GpEndereco gpEndereco)
         {

@@ -90,6 +90,33 @@ namespace NimbusApi.Controllers
 
         }
 
+        [HttpPost("postAll")]
+        public async Task<ActionResult<Usuario>> PostAll([FromBody] ObjetoAddUser obj)
+        {
+            try
+            {
+                var createdUsuario = await _service.AddAllAsync(obj);
+                return CreatedAtAction(nameof(GetById), new { id = createdUsuario.IdUsuario }, createdUsuario);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return BadRequest(new { StatusCode = 400, ex.Message });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { StatusCode = 400, ex.Message });
+            }
+            catch (EmailInvalidoException ex)
+            {
+                return BadRequest(new { StatusCode = 400, ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { StatusCode = 400, Message = ex.Message });
+            }
+        }
+
+
         [HttpPut("{id}")]
         public async Task<ActionResult<Usuario>> Put(int id, [FromBody] Usuario usuario)
         {

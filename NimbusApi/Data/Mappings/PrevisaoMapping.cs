@@ -1,4 +1,6 @@
-﻿using NimbusApi.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using NimbusApi.Models;
 
 namespace NimbusApi.Data.Mappings
 {

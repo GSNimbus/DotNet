@@ -6,21 +6,19 @@ namespace NimbusApi.Validations
     {
         public static void ValidePrevisao(Previsao previsao)
         {
-            if (string.IsNullOrEmpty(previsao.DataPrevisao))
+
+            if (previsao == null)
             {
-                throw new Exceptions.DataObrigatoriaException();
+                throw new ArgumentNullException(nameof(previsao), "Previsão não pode ser nula");
             }
-            if (previsao.TemperaturaMaxima < -100 || previsao.TemperaturaMaxima > 100)
+            if (previsao.Temperatura < -100 || previsao.Temperatura > 100)
             {
-                throw new Exceptions.TemperaturaInvalidaException();
+                throw new ArgumentOutOfRangeException("Temperatura deve estar entre -100 e 100 graus Celsius");
             }
-            if (previsao.TemperaturaMinima < -100 || previsao.TemperaturaMinima > 100)
-            {
-                throw new Exceptions.TemperaturaInvalidaException();
-            }
+
             if (previsao.IdBairro <= 0)
             {
-                throw new Exceptions.CidadeObrigatoriaException();
+                throw new ArgumentException("Id bairro não pode ser 0");
             }
 
         }

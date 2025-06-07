@@ -11,12 +11,12 @@ namespace NimbusApi.Models
         public int IdUsuario { get; set; }
 
         [JsonIgnore]
-        public Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
 
         public int IdEndereco { get; set; }
 
         [JsonIgnore]
-        public Endereco Endereco { get; set; }
+        public Endereco? Endereco { get; set; }
 
     }
 }

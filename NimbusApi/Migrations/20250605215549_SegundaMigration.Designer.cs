@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NimbusApi.Connection;
 using Oracle.EntityFrameworkCore.Metadata;
@@ -11,9 +12,11 @@ using Oracle.EntityFrameworkCore.Metadata;
 namespace NimbusApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250605215549_SegundaMigration")]
+    partial class SegundaMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,7 +130,8 @@ namespace NimbusApi.Migrations
                         .HasColumnName("cep");
 
                     b.Property<int>("IdBairro")
-                        .HasColumnType("NUMBER(10)");
+                        .HasColumnType("NUMBER(10)")
+                        .HasColumnName("id_bairro");
 
                     b.HasKey("IdEndereco");
 
@@ -293,6 +297,9 @@ namespace NimbusApi.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR2(100)");
 
+                    b.Property<int?>("LocalizacaoIdLocalizacao")
+                        .HasColumnType("NUMBER(10)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -303,7 +310,12 @@ namespace NimbusApi.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("NVARCHAR2(100)");
 
+                    b.Property<int>("idLocalizacao")
+                        .HasColumnType("NUMBER(10)");
+
                     b.HasKey("IdUsuario");
+
+                    b.HasIndex("LocalizacaoIdLocalizacao");
 
                     b.ToTable("t_nimbus_usuario", (string)null);
                 });
@@ -399,6 +411,15 @@ namespace NimbusApi.Migrations
                         .IsRequired();
 
                     b.Navigation("Bairro");
+                });
+
+            modelBuilder.Entity("NimbusApi.Models.Usuario", b =>
+                {
+                    b.HasOne("NimbusApi.Models.Localizacao", "Localizacao")
+                        .WithMany()
+                        .HasForeignKey("LocalizacaoIdLocalizacao");
+
+                    b.Navigation("Localizacao");
                 });
 
             modelBuilder.Entity("NimbusApi.Models.Bairro", b =>

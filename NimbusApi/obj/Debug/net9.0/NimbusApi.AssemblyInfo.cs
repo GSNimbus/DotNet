@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NimbusApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58730f7e2a80c512c739b9001f5de132ea881cb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a688d6b67f9b5a61d2ef20f3619e54ab6e9975e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("NimbusApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NimbusApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

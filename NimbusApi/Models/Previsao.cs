@@ -8,17 +8,17 @@ namespace NimbusApi.Models
 
         public DateTime DataHora { get; set; }
 
-        public int Temperatura { get; set; }
+        public float Temperatura { get; set; }
 
-        public int Chuva { get; set; }
+        public float Chuva { get; set; }
         
-        public int CodigoChuva { get; set; } 
+        public float CodigoChuva { get; set; } 
 
-        public int VelocidadeVento { get; set; }
+        public float VelocidadeVento { get; set; }
 
-        public int RajadaVento { get; set; }
+        public float RajadaVento { get; set; }
 
-        public int Umidade { get; set; }
+        public float Umidade { get; set; }
 
         public int IdBairro { get; set; }
 

@@ -754,6 +754,32 @@
     ]
   },
   {
+    "ContainingType": "NimbusApi.Controllers.GpEnderecoController",
+    "Method": "GetByUsuarioId",
+    "RelativePath": "api/GpEndereco/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NimbusApi.Models.GpEndereco, NimbusApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "NimbusApi.Controllers.LocalizacaoController",
     "Method": "Get",
     "RelativePath": "api/Localizacao",
@@ -1018,6 +1044,152 @@
     ]
   },
   {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "Get",
+    "RelativePath": "api/Previsao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NimbusApi.Models.Previsao, NimbusApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "Add",
+    "RelativePath": "api/Previsao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "previsao",
+        "Type": "NimbusApi.Models.Previsao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "GetById",
+    "RelativePath": "api/Previsao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NimbusApi.Models.Previsao",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "Update",
+    "RelativePath": "api/Previsao/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "previsao",
+        "Type": "NimbusApi.Models.Previsao",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "Delete",
+    "RelativePath": "api/Previsao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "GetByBairro",
+    "RelativePath": "api/Previsao/bairro/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NimbusApi.Models.Previsao, NimbusApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.PrevisaoController",
+    "Method": "Prever",
+    "RelativePath": "api/Previsao/prever/{idBairro}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "NimbusApi.Models.PreverCorpo",
+        "IsRequired": true
+      },
+      {
+        "Name": "idBairro",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NimbusApi.Controllers.UsuarioController",
     "Method": "Get",
     "RelativePath": "api/Usuario",
@@ -1147,6 +1319,32 @@
       {
         "Name": "email",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NimbusApi.Models.Usuario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NimbusApi.Controllers.UsuarioController",
+    "Method": "PostAll",
+    "RelativePath": "api/Usuario/postAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "obj",
+        "Type": "NimbusApi.Models.ObjetoAddUser",
         "IsRequired": true
       }
     ],

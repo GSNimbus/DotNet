@@ -69,6 +69,28 @@ namespace NimbusApi.Controllers
             }
         }
 
+        [HttpGet("usuario/{usuarioId}")]
+        public async Task<ActionResult<IEnumerable<GpEndereco>>> GetByUsuarioId(int usuarioId)
+        {
+            try
+            {
+                var enderecos = await _service.GetByIdUsuarioAsync(usuarioId);
+                if (enderecos == null || !enderecos.Any())
+                {
+                    return NotFound();
+                }
+                return Ok(enderecos);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { StatusCode = 400, ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { StatusCode = 400, Message = ex.Message });
+            }
+        }
+
         [HttpPost]
         public async Task<ActionResult<GpEndereco>> Post([FromBody] GpEndereco gpEndereco)
         {

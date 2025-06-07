@@ -13,10 +13,6 @@ namespace NimbusApi.Models
 
         public string Senha { get; set; }
 
-        public int idLocalizacao { get; set; }
-
-        [JsonIgnore]
-        public Localizacao? Localizacao { get; set; }
 
     }
 }

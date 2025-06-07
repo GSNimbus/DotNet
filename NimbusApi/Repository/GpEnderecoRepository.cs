@@ -24,6 +24,10 @@ namespace NimbusApi.Repository
         {
             return await _context.GpEnderecos.FirstOrDefaultAsync(e => e.NmGrupo == nome);
         }
+        public async Task<IEnumerable<GpEndereco>> GetByUsuarioIdAsync(int usuarioId)
+        {
+            return await _context.GpEnderecos.Where(e => e.IdUsuario == usuarioId).ToListAsync();
+        }
 
         public async Task<GpEndereco> AddAsync(GpEndereco gpEndereco)
         {

@@ -16,9 +16,6 @@ namespace NimbusApi.Data.Mappings
                 .HasColumnName("cep")
                 .IsRequired()
                 .HasMaxLength(10);
-            builder.Property(e => e.IdBairro)
-                .HasColumnName("id_bairro")
-                .IsRequired();
             builder.HasOne(e => e.Bairro)
                 .WithMany(b => b.Enderecos)
                 .HasForeignKey(e => e.IdBairro);

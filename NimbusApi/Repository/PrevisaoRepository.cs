@@ -1,4 +1,6 @@
-﻿using NimbusApi.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using NimbusApi.Connection;
+using NimbusApi.Models;
 
 namespace NimbusApi.Repository
 {
@@ -20,10 +22,12 @@ namespace NimbusApi.Repository
         {
             return await _context.Previsao.FindAsync(id);
         }
-        public async Task<Previsao?> GetByCidadeIdAsync(int idBairro)
+
+        public async Task<IEnumerable<Previsao>> GetByBairroIdAsync(int idBairro)
         {
             return await _context.Previsao.Where(p => p.IdBairro == idBairro).ToListAsync();
         }
+
 
         public async Task<Previsao> AddAsync(Previsao previsao)
         {

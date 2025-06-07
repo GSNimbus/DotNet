@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "API REST de sistema de alertas de desastres meteorologico",
-    "description": "Aplica��o destinada a pessoas que criarem contas para utilizar o aplicativo",
+    "title": "API REST de sistema de alertas de enchentes",
+    "description": "Aplicação destinada a pessoas que criarem contas para utilizar o aplicativo",
     "version": "v1"
   },
   "paths": {
@@ -1242,6 +1242,55 @@
         }
       }
     },
+    "/api/GpEndereco/usuario/{usuarioId}": {
+      "get": {
+        "tags": [
+          "GpEndereco"
+        ],
+        "parameters": [
+          {
+            "name": "usuarioId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GpEndereco"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GpEndereco"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GpEndereco"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Localizacao": {
       "get": {
         "tags": [
@@ -1685,6 +1734,265 @@
         }
       }
     },
+    "/api/Previsao": {
+      "get": {
+        "tags": [
+          "Previsao"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Previsao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Previsao/{id}": {
+      "get": {
+        "tags": [
+          "Previsao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Previsao"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Previsao"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Previsao"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Previsao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Previsao"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Previsao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Previsao/bairro/{id}": {
+      "get": {
+        "tags": [
+          "Previsao"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Previsao"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Previsao/prever/{idBairro}": {
+      "post": {
+        "tags": [
+          "Previsao"
+        ],
+        "parameters": [
+          {
+            "name": "idBairro",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreverCorpo"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreverCorpo"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PreverCorpo"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuario": {
       "get": {
         "tags": [
@@ -1925,6 +2233,54 @@
           }
         }
       }
+    },
+    "/api/Usuario/postAll": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjetoAddUser"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjetoAddUser"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ObjetoAddUser"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Usuario"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1952,7 +2308,7 @@
             "type": "string",
             "format": "date-time"
           },
-          "idLocalizacao": {
+          "idBairro": {
             "type": "integer",
             "format": "int32"
           }
@@ -2075,6 +2431,60 @@
         },
         "additionalProperties": false
       },
+      "ObjetoAddUser": {
+        "type": "object",
+        "properties": {
+          "bairro": {
+            "type": "string",
+            "nullable": true
+          },
+          "cep": {
+            "type": "string",
+            "nullable": true
+          },
+          "cidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "numLogradouro": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nomeLogradouro": {
+            "type": "string",
+            "nullable": true
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "senha": {
+            "type": "string",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "string",
+            "nullable": true
+          },
+          "pais": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Pais": {
         "type": "object",
         "properties": {
@@ -2085,6 +2495,86 @@
           "nomePais": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PreverCorpo": {
+        "type": "object",
+        "properties": {
+          "temperature2_m": {
+            "type": "number",
+            "format": "float"
+          },
+          "relative_humidity2_m": {
+            "type": "number",
+            "format": "float"
+          },
+          "surface_pressure": {
+            "type": "number",
+            "format": "float"
+          },
+          "apparent_temperature": {
+            "type": "number",
+            "format": "float"
+          },
+          "wind_speed10_m": {
+            "type": "number",
+            "format": "float"
+          },
+          "mes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "diaDoAno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horaDoDia": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Previsao": {
+        "type": "object",
+        "properties": {
+          "idPrevisao": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "temperatura": {
+            "type": "number",
+            "format": "float"
+          },
+          "chuva": {
+            "type": "number",
+            "format": "float"
+          },
+          "codigoChuva": {
+            "type": "number",
+            "format": "float"
+          },
+          "velocidadeVento": {
+            "type": "number",
+            "format": "float"
+          },
+          "rajadaVento": {
+            "type": "number",
+            "format": "float"
+          },
+          "umidade": {
+            "type": "number",
+            "format": "float"
+          },
+          "idBairro": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -2107,10 +2597,6 @@
           "senha": {
             "type": "string",
             "nullable": true
-          },
-          "idLocalizacao": {
-            "type": "integer",
-            "format": "int32"
           }
         },
         "additionalProperties": false
