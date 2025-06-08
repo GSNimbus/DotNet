@@ -40,7 +40,7 @@ O projeto utiliza o **Entity Framework Core** para acesso a dados e segue o padr
 
 Abaixo está o diagrama lógico da arquitetura do sistema, ilustrando a relação entre as principais entidades e camadas da aplicação:
 
-![Diagrama Lógico](logical.png)
+![Diagrama Lógico](Logical.png)
 
 
 ## Instruções para Acesso
