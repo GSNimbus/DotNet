@@ -48,7 +48,7 @@ Abaixo está o diagrama lógico da arquitetura do sistema, ilustrando a relaçã
 ### Pré-requisitos
 
 - .NET SDK 9.0 ou superior
-- Acesso ao banco de dados Oracle (ajuste a string de conexão em `NimbusApi/appsettings.json` se necessário)
+- Acesso ao banco de dados Oracle
 
 ### Como Executar
 
@@ -69,7 +69,8 @@ Abaixo está o diagrama lógico da arquitetura do sistema, ilustrando a relaçã
     dotnet run
     ```
 
-4. Acesse a API via [http://localhost:5000](http://localhost:5000) (ou porta configurada).
+4. Acesse a API via [http://localhost:7216](http://localhost:7216)
+5. Acesso ao swagger em: [http://localhost:7216/swagger/index.html](http://localhost:7216/swagger/index.html)
 
 ### Endpoints Principais
 
@@ -152,7 +153,7 @@ Consulte os controllers para mais endpoints.
 
 Você pode testar os endpoints utilizando ferramentas como **Swagger**, **Postman** ou **curl**.
 
-#### Exemplo: Criar um novo usuário (simples)
+#### Exemplo: Criar um novo usuário
 
 ```http
 POST https://localhost:7216/api/Usuario
