@@ -6,8 +6,11 @@ Nossa solução para a Global Solution consiste em uma aplicação para realizar
 
 A aplicação coleta dados atualizados da previsão do tempo e a localização do usuário, assim utiliza esses dados junto ao modelo de inteligência artificial para prever a chance de ocorrências de um desastre natural em sua região.
 
-## Video apresentação
+## Video demonstrativo
 - https://youtu.be/EK676Obg-t0
+
+## Vídeo Pitch
+- https://www.youtube.com/watch?v=Cky07rBTRaE
 
 ## Estrutura do Projeto
 
